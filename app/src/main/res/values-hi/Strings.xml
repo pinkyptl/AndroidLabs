@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">
-प्रयोगशाला1</string>
+    <string name="app_name">प्रयोगशाला 2</string>
     <string name="hello_message">नमस्ते दुनिया</string>
-    <string name="ButtonText">
-मैं एक बटन हूँ</string>
+    <string name="ButtonText">ैं एक बटन हूँ</string>
+    <string name="Name">नाम</string>
+    <string name="Login">लॉग इन करें</string>
+    <string name="Loginname">लॉगिन नाम</string>
+    <string name="Password">पारण शब्द</string>
+    <string name="Switch">
+यह क्या करता है</string>
+    <string name="Radiobutton">रेडियो बटन</string>
+    <string name="Checkbox">चेकबॉक्स</string>
 </resources>
