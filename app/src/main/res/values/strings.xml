@@ -8,5 +8,10 @@
     <string name="Switch">Switch</string>
     <string name="Radiobutton">Radiobutton</string>
     <string name="Checkbox">Checkbox</string>
+    <string name="dialog_message">Do you want to exit?</string>
+    <string name="dialog_title">Welcome</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">No</string>
+    <string name="response">Here is my reponse</string>
 
 </resources>
