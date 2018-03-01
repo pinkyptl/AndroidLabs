@@ -17,15 +17,21 @@ public class StartActivity extends Activity {
         setContentView(R.layout.activity_start);
         Log.i(ACTIVITY_NAME,"In onCreate():");
         Button btn2= (Button)findViewById(R.id.button);
+        Button btnChat = (Button) findViewById(R.id.button2);
       btn2.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
               final Intent intent = new Intent(StartActivity.this, ListitemsActivity.class);
               startActivity(intent);
               startActivityForResult(intent,50);
+              Log.i(ACTIVITY_NAME, "User clicked Start Chat");
           }
       });
 
+      btnChat.setOnClickListener(e-> {
+          Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+          startActivity(intent);
+      });
     }  @Override
     protected void onStart() {
         Log.i(ACTIVITY_NAME, "In onStart()");
@@ -33,6 +39,12 @@ public class StartActivity extends Activity {
     }
 
     protected void onResume() {
+
+
+
+
+
+
         Log.i(ACTIVITY_NAME, "In onResume()");
         super.onResume();
     }
