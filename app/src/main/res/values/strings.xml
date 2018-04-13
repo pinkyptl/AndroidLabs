@@ -13,5 +13,7 @@
     <string name="ok">Yes</string>
     <string name="cancel">No</string>
     <string name="response">Here is my reponse</string>
+    <string name="Button2Text">Start Chat</string>
+    <string name="title_activity_test__toobar">Test_Toobar</string>
 
 </resources>

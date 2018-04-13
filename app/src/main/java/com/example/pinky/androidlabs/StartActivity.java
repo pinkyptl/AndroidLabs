@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class StartActivity extends Activity {
     protected static final String ACTIVITY_NAME = "StartActivity";
@@ -17,6 +16,8 @@ public class StartActivity extends Activity {
         setContentView(R.layout.activity_start);
         Log.i(ACTIVITY_NAME,"In onCreate():");
         Button btn2= (Button)findViewById(R.id.button);
+        Button tool1= (Button)findViewById(R.id.tool);
+
         Button btnChat = (Button) findViewById(R.id.button2);
         Button forecastbtn = (Button)findViewById(R.id.weather);
       btn2.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +29,14 @@ public class StartActivity extends Activity {
               Log.i(ACTIVITY_NAME, "User clicked Start Chat");
           }
       });
+
+        tool1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final Intent intent = new Intent(StartActivity.this, TestToolbar.class);
+                startActivity(intent);
+            }
+        });
 
       forecastbtn.setOnClickListener(new View.OnClickListener() {
           @Override

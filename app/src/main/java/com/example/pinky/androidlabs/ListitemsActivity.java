@@ -29,7 +29,7 @@ public class ListitemsActivity extends Activity {
         Log.i(ACTIVITY_NAME, "in on Create():");
 
          imageButton = (ImageButton) findViewById(R.id.imageButton);
-        Switch switch2 = (Switch) findViewById(R.id.switch1);
+        Switch switch2 = (Switch) findViewById(R.id.onOffSwitch);
         CheckBox checkbox = (CheckBox) findViewById(R.id.checkBox);
 
         switch2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
